@@ -12,8 +12,10 @@
       background-color: #f0f0f0; /* Optional background color */
     }
     video {
-      max-width: 90%; /* Ensure video doesn't overflow the viewport */
-      max-height: 90%;
+      width: 100vw; /* Full width of the viewport */
+      height: 100vh; /* Full height of the viewport */
+      object-fit: contain; /* Ensure video scales proportionally */
+      background-color: #000; /* Fallback background in case video has transparency */
     }
   </style>
 </head>
